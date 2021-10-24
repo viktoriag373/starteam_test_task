@@ -1,0 +1,104 @@
+.expert {
+	padding-top: 1.66em;
+	padding-bottom: 1.66em;
+	position: relative;
+	z-index: 5;
+	@media(max-width: 570px) {
+		padding-bottom: 0;
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 14.6em;
+		@media(max-width: 570px) {
+			flex-direction: column;
+			height: auto;
+		}
+	}
+
+
+	&__description {
+		width: 50%;
+		margin: 0 auto;
+		padding-left: 3.95em;
+		background: #F8C67D;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media(max-width: 570px) {
+			order: 2;
+		}
+		@media(max-width: 570px) {
+			width: 100%;
+			padding-top: 3em;
+		}
+	}
+
+	&__description-text {
+
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1.2em;
+		margin-bottom: 1.5em;
+		color: #140202;
+
+		@media(max-width: 570px) {
+			font-size: 2em;
+			padding: 0 3em;
+			
+		}
+		span {
+			font-weight: 600;
+		}
+
+	}
+
+	&__images {
+		width: 50%;
+		height: 100%;
+		box-shadow: 135px 0px 131px #f8c67d inset;
+		background: url(../images/img/doctors.jpg);
+		background-position: top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+
+		@media(max-width: 570px) {
+			width: 100%;
+			height: 29em;
+			box-shadow: 0px -38px 35px #f8c67d inset;
+		}
+	}
+	&__image {
+		width: 100%;
+	
+	}
+
+	&_revert {
+		padding-top: 5em;
+		padding-bottom: 0;
+		.expert__description {
+			order: 2;
+		}
+		.expert__images {
+			background: url(../images/img/doctors-revert.jpg);
+			background-position: top center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			box-shadow: -103px 0px 100px #f8c67d inset;
+			order: 1;
+			@media(max-width: 570px) {
+				background: url(../images/img/doctors-revert-adaptive.jpg);
+				background-position: top center;
+				background-size: 100%;
+				height: 43em;
+				background-repeat: no-repeat;
+				box-shadow: 0px -38px 35px #f8c67d inset;
+			}
+		}
+	}
+}
+

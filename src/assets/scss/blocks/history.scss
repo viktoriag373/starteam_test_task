@@ -1,0 +1,108 @@
+.history {
+	background: #420707;
+	width: 90%; 
+	margin: 0 auto;
+	border-radius: 0.625em;
+	padding: 0.875em 1.375em;
+	box-sizing: border-box;	
+	box-shadow: 0px 4px 50px rgba(136, 136, 136, 0.25);
+	margin-bottom: 1.45em;
+	@media(max-width: 570px) {
+		border-radius: 2em;
+		padding: 2em 1.375em;
+	}
+	&__wrap {
+		border: 2px solid #FFFFFF;
+		border-radius: 0.625em;
+		padding: 1.54em 0.667em;
+		@media(max-width: 570px) {
+			border-radius: 2em;
+		}
+	}
+
+	&__title {
+		color: #FFFFFF;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.2em;
+		text-align: center;
+		max-width: 21.58em;
+		margin: 0 auto 0.625em;
+		@media(max-width: 570px) {
+			font-size: 2em;
+		}
+		span {
+			font-weight: 600;
+		}
+	
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media(max-width: 570px) {
+			flex-direction: column;
+		}
+	}
+
+	&__block {
+		color: #140202;
+		width: 15.25em;
+		height: 10.2em;
+		text-align: center;
+		box-shadow: 0px 5px 73px rgba(86, 35, 35, 0.9), 
+					0px -100px 40px rgba(255, 255, 255, 0.8) inset;
+		border-radius: 0.83em;
+		padding: 1.04em;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end ;
+
+		@media(max-width: 570px) {
+			width: 46.33em;
+			height: 30.33em;
+			margin-bottom: 2.5em;
+			border-radius: 2em;
+		}
+
+		&_bg-1 {
+			background: url(../images/bg/history-block-1.jpg);
+			background-position: top center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		&_bg-2 {
+			background: url(../images/bg/history-block-2.jpg);
+			background-position: top center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		&_bg-3 {
+			background: url(../images/bg/history-block-3.jpg);
+			background-position: top center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__title-block {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 1em;
+		line-height: 1.21em;
+		text-align: center;
+		text-transform: uppercase;
+		@media(max-width: 570px) {
+			font-size: 2.5em;
+			max-width: 15em;
+		}
+		span {
+			font-size: 0.667em;
+			line-height: 0.83em;
+			display: block;
+			margin-top: 0.4em;
+		}
+	}
+}

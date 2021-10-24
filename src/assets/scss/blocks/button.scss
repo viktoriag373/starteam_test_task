@@ -1,0 +1,19 @@
+.button {
+	font-size: 0.75em;
+	padding: 1em 2.67em;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.23em;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	background: linear-gradient(180deg, #F42C2B 0%, rgba(0, 0, 0, 0) 100%), #460D09;
+	border-radius: 0.41em;
+	letter-spacing: 0.04em;
+	text-align: center;
+	transition: all 0.2s ease-in-out 0.1s;
+	border: none;
+	&:hover {
+		background: linear-gradient(180deg, #460D09 0%, rgba(0, 0, 0, 0) 100%), #F42C2B;
+	}
+}

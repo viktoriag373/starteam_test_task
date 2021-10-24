@@ -1,0 +1,103 @@
+.form {
+	background: #fff;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.25em 1.25em 0.83em 1.25em;
+	border-radius: 0.625em;
+	box-shadow: 0px 4px 50px rgba(136, 136, 136, 0.25);
+	z-index: 20;
+	@media(max-width: 570px) {
+		font-size: 1.5em;
+	}
+
+
+	&__title {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.2em;
+		margin-bottom: 0.83em;
+		@media(max-width: 570px) {
+			font-size: 1.5em;
+		}
+		span {
+			font-weight: 600;
+		}
+	}
+
+	&__sale {
+		margin: 0 auto;
+		width: 100%;
+		@media(max-width: 570px) {
+			font-size: 2em;
+		}
+	}
+
+	&__sale-end {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 0.5em;
+		line-height: 0.625em;
+		margin-bottom: 0.9em;
+	}
+
+	&__wrap {
+		// display: flex;
+		// flex-direction: column;
+		width: 100%;
+	}
+
+	&__label {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 0.6em;
+		line-height: 1.7em;
+		@media(max-width: 570px) {
+			font-size: 1em;
+		}
+	}
+
+	&__input {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.5em;
+		line-height: 0.91em;
+		margin-bottom: 0.83em;
+		background: #EAEAEC;
+		color: #BEBEBE;
+		border-radius: 0.42em;
+		border: none;
+		width: 100%;
+		padding: 0.5em;
+		box-sizing: border-box;
+		@media(max-width: 570px) {
+			font-size: 1.6em;
+		}
+	}
+
+	&__button {
+		padding: 0.71em 0.92em;
+		margin-bottom: 0.71em;
+		@media(max-width: 570px) {
+			font-size: 1.5em;
+		}
+	}
+
+	&__condition {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 0.5em;
+		line-height: 1.1em;
+		max-width: 15.9em;
+		@media(max-width: 570px) {
+			font-size: 0.9em;
+		}
+	}
+
+	&__condition-descriptin {
+		display: block;
+		font-weight: 600;
+	}
+}

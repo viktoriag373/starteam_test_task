@@ -1,0 +1,43 @@
+.header {
+	background: #fff;
+	padding: 1.45em 0.42em 1.4em 0.42em;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		@media(max-width: 570px) {
+			flex-direction: column;
+			max-width: max-content;
+			margin: 0 auto;
+		}
+	}
+
+	&__description {
+		font-size: 1em;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.45em;
+		max-width: 27.04em;
+		text-align: center;
+		margin-right: 0.83em;
+		color: #000;
+		@media(max-width: 570px) {
+			font-size: 1.6em;
+			margin-right: 0;
+			margin-bottom: 0.56em;
+			max-width: 21.8em;
+		}
+	}
+
+	&__button {
+
+		@media(max-width: 570px) {
+			font-size: 1.6em;
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+	}
+}

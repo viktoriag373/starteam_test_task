@@ -1,0 +1,109 @@
+.effect {
+	padding-top: 1.66em;
+	padding-bottom: 1.66em;
+	padding-left: 3.95em;
+	position: relative;
+
+	@media(max-width: 570px) {
+		padding-top: 58.3em;
+		padding-left: 0;
+
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: -6em;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: url(../images/bg/flower.png) no-repeat top left;
+		background-size: contain;
+		background-position-y: -40px;
+		@media(max-width: 570px) {
+			background-size: 41.41em;
+			left: -2em;
+			top: 10em;
+		}
+	}
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 1.5em;
+		line-height: 1.3em;
+		color: #140202;
+		max-width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 1.66em;
+		@media(max-width: 570px) {
+			font-size: 2em;	
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		@media(max-width: 570px) {
+			flex-direction: column;
+		}
+	}
+
+	&__description {
+		width: 50%;
+		margin: 0 auto;
+		@media(max-width: 570px) {
+			order: 2;
+		}
+		@media(max-width: 570px) {
+			width: 100%;
+		}
+	}
+
+	&__description-text {
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1.2em;
+		margin-bottom: 1.5em;
+		color: #140202;
+
+		@media(max-width: 800px) {
+			font-size: 1.2em;
+		}
+		@media(max-width: 570px) {
+			font-size: 2em;
+			padding: 0 3em;
+			
+		}
+		span {
+			font-weight: 600;
+		}
+
+	}
+
+	&__images {
+		width: 50%;
+
+		@media(max-width: 570px) {
+			width: 100%;
+		}
+	}
+	&__image {
+		width: 100%;
+		@media(max-width: 570px) {
+			display: none;
+		}
+	}
+	&__image-adaptive {
+		display: none;
+		width: 100%;
+		@media(max-width: 570px) {
+			display: block;
+		}
+	}
+}
+
